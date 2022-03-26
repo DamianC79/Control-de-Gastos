@@ -11,9 +11,11 @@ const ControlPresupuesto = ({gastos,presupuesto}) => {
     useEffect(() => {
       const totalGastado = gastos.reduce( (total, gasto) => gasto.monto + total, 0)
       const totalDisponible = presupuesto - totalGastado
+      const nuevoPorcentaje = ( ( (presupuesto - totalDisponible) / presupuesto * 100) ).toFixed(2)
 
       setDisponible(totalDisponible)
       setGastado(totalGastado)
+      setPorcentaje(nuevoPorcentaje)
     }, [gastos])
     
 
