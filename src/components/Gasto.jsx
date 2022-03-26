@@ -29,7 +29,7 @@ const diccionarioIconos = {
     targeta : IconoAhorro
 }
 
-const Gasto = ({gasto, setGastoEditar}) => {
+const Gasto = ({gasto, setGastoEditar, eliminarGasto}) => {
     const {categoria, nombre, monto, id, fecha} = gasto
 
     const leadingActions = () => (
@@ -42,7 +42,7 @@ const Gasto = ({gasto, setGastoEditar}) => {
 
     const trailingActions = () => (
       <TrailingActions>
-        <SwipeAction onClick = {() => console.log('eliminando')}>
+        <SwipeAction onClick = {() => eliminarGasto(id)}>
           Eliminar
         </SwipeAction>
       </TrailingActions>
