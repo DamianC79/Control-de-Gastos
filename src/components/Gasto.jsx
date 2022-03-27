@@ -24,7 +24,7 @@ const diccionarioIconos = {
     salud : IconoSalud,
     comida : IconoComida,
     varios : IconoGastos,
-    internet : IconoOcio,
+    ocio : IconoOcio,
     subscripciones : IconoSuscripciones,
 }
 
