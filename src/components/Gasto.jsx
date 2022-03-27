@@ -22,11 +22,10 @@ const diccionarioIconos = {
     agua : IconoCasa,
     gas : IconoCasa,
     salud : IconoSalud,
-    despensa : IconoComida,
+    comida : IconoComida,
     varios : IconoGastos,
     internet : IconoOcio,
     subscripciones : IconoSuscripciones,
-    targeta : IconoAhorro
 }
 
 const Gasto = ({gasto, setGastoEditar, eliminarGasto}) => {
