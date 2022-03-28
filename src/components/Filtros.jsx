@@ -19,7 +19,7 @@ const Filtros = ({filtro,setFiltro}) => {
                     <option value="varios">Varios</option>
                     <option value="salud">Salud</option>
                     <option value="subscripciones">Subscripciones</option>
-                    <option value="internet">Internet</option>
+                    <option value="ocio">Ocio</option>
                 </select>
             </div>
         </form>
